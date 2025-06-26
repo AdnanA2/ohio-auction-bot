@@ -31,7 +31,7 @@ def send_email_alert(items):
         body += f"{i}. {item['title']}\n"
         body += f"   Link: {item['link']}\n\n"
     
-    body += "\nHappy bidding! 🎯"
+    body += "\nHappy bidding!"
     
     # Create message
     msg = MIMEText(body)
