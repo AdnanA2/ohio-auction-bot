@@ -21,7 +21,7 @@ def main():
             send_email_alert(matching_items)
             print(f"Sent {len(matching_items)} results via email")
         except Exception as e:
-            print(f"❌ Failed to send email: {e}")
+            print(f"Failed to send email: {e}")
             print(f"Found {len(matching_items)} matching items (email failed):")
             for item in matching_items:
                 print(f"Title: {item['title']}")
